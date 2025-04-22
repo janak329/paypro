@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make a Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    .payment-option {
+      margin-bottom: 20px;
+    }
+    .payment-option h3 {
+      margin: 0 0 10px 0;
+    }
+    .info {
+      background: #eee;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background: #28a745;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Make a Payment</h2>
+
+    <div class="payment-option">
+      <h3>Cash App</h3>
+      <div class="info">$YourCashtag</div>
+    </div>
+
+    <div class="payment-option">
+      <h3>Zelle</h3>
+      <div class="info">your@email.com</div>
+    </div>
+
+    <div class="payment-option">
+      <h3>Chime</h3>
+      <div class="info">yourphone@example.com</div>
+    </div>
+
+    <form action="#" method="post">
+      <h3>Confirm Your Payment</h3>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="method">Payment Method Used</label>
+      <input type="text" id="method" name="method" placeholder="Cash App / Zelle / Chime" required />
+
+      <label for="confirm">Confirmation / Notes</label>
+      <input type="text" id="confirm" name="confirm" />
+
+      <input type="submit" value="Submit Payment Info" />
+    </form>
+  </div>
+</body>
+</html
+
+
+
